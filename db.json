@@ -1,0 +1,25 @@
+{
+  "shirts": [
+    {
+      "model": "Slim Formal",
+      "type": "Cotton",
+      "price": "89",
+      "imgUrl": "https://www.cottonking.com/1635-thickbox_default/buy-slim-formal-cotton-shirt-online-office-wear-slim-formal-cotton-shirt-online-s26905.jpg",
+      "id": 3
+    },
+    {
+      "model": "BlackStone",
+      "type": "Sport T-Shirt",
+      "price": "31",
+      "imgUrl": "https://cdn.designbyhumans.com/product_images/p/599418.65.fd0c7S7YyNAAA-650x650-b-p-eee.jpg",
+      "id": 4
+    },
+    {
+      "model": "Hi Visibility",
+      "type": "Safety Orange",
+      "price": "27",
+      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/61mSyjeYXWL._AC_UX679_.jpg",
+      "id": 5
+    }
+  ]
+}

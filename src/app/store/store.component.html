@@ -1,0 +1,14 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="page-cont">
+    <a *ngFor="let shirt of shirts" class="shirt-row" [routerLink]="['/shirt', shirt.id]">
+        <div class="shirt-img">
+            <img src="{{ shirt.imgUrl }}" alt="">
+        </div>
+        <div class="shirt-desc">
+            <h3 class="shirt-model">{{ shirt.model }}</h3>
+            <p class="shirt-type">{{ shirt.type }}</p>
+        </div>
+        <div class="price">{{ shirt.price }} $</div>
+    </a>
+</div>

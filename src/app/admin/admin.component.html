@@ -1,0 +1,37 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="page-cont">
+    <div class="add-shirt">
+        <a [routerLink]="['add']" class="btn">Add new shirt</a>
+    </div>
+    
+    <table class="admin-shirts-list table">
+        <tr>
+            <th>Image</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let shirt of shirts">
+            <td class="shirt-img">
+                <img src="{{ shirt.imgUrl }}" alt="">
+            </td>
+            <td>{{ shirt.model }}</td>
+            <td>{{ shirt.type }}</td>
+            <td>{{ shirt.price }} $</td>
+            <td class="edit-shirt">
+                <a [routerLink]="['edit', shirt.id]">
+                    <img src="../../assets/img/edit.svg" alt="">
+                </a>
+            </td>
+            <td class="delete-shirt">
+                <button (click)="deleteShirt(shirt.id)">
+                    <img src="../../assets/img/delete.svg" alt="">
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+
