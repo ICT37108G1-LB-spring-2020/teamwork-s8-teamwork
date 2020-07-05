@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "shirt-store": {
+    "books-store": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shirt-store",
+            "outputPath": "dist/books-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shirt-store:build"
+            "browserTarget": "books-store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shirt-store:build:production"
+              "browserTarget": "books-store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shirt-store:build"
+            "browserTarget": "books-store:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shirt-store:serve"
+            "devServerTarget": "books-store:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shirt-store:serve:production"
+              "devServerTarget": "books-store:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "shirt-store"
+  "defaultProject": "books-store"
 }

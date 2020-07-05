@@ -1,17 +1,17 @@
 <app-spinner *ngIf="loading"></app-spinner>
 
 <div class="page-cont">
-    <form [formGroup]="editShirtForm" (ngSubmit)="onSubmit()" class="shirt-editing-form basic-form">
+    <form [formGroup]="editBooksForm" (ngSubmit)="onSubmit()" class="books-editing-form basic-form">
         <div class="from-group">
-             <label for="model">Model: </label>
+             <label for="model">Name: </label>
              <input type="text" name="model" id="model" formControlName="model">
          </div>
          <div class="from-group">
-             <label for="type">Type: </label>
+             <label for="type">Author: </label>
              <input type="text" name="type" id="type" formControlName="type">
          </div>
          <div class="from-group">
-             <label for="pric">Price: </label>
+             <label for="pric">Year of issue: </label>
              <input type="numbr" name="price" id="pric" formControlName="price">
          </div>
          <div class="from-group">

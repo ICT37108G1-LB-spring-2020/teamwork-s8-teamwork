@@ -1,0 +1,23 @@
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div class="books-cont page-cont">
+    <div class="books-img">
+        <img src="{{ books.imgUrl }}" alt="">
+    </div>
+
+    <table class="books-desc">
+        <tr>
+            <th>Name:</th>
+            <td>{{ books.Name}}</td>
+        </tr>
+        <tr>
+            <th>Type:</th>
+            <td>{{ books.Author}}</td>
+        </tr>
+        <tr>
+            <th>Price:</th>
+            <td>{{ books.Year of issue}} </td>
+        </tr>
+    </table>
+</div>
+

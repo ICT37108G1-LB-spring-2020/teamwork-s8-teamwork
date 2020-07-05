@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShirtsService } from '../services/shirts.service';
+import { BooksService } from '../services/books.service';
 
 @Component({
   selector: 'app-store',
@@ -7,21 +7,21 @@ import { ShirtsService } from '../services/shirts.service';
   styleUrls: ['./store.component.sass']
 })
 export class StoreComponent implements OnInit {
-  shirts: Object; 
+  books: Object; 
   loading: boolean = true;
 
-  constructor(private shirtsService: ShirtsService) {
+  constructor(private BooksService: BooksService) {
 
   }
 
-  loadShirtsList(): void { 
-    this.shirtsService.requestShirts().subscribe(data => {
-      this.shirts = data;
+  loadBooksList(): void { 
+    this.booksService.requestBooks().subscribe(data => {
+      this.books = data;
       this.loading = false;
     });
   }
 
   ngOnInit(): void {
-    this.loadShirtsList();
+    this.loadBooksList();
   }
 }

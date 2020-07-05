@@ -3,16 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { StoreComponent } from './store/store.component';
 import { AdminComponent } from './admin/admin.component';
-import { ShirtComponent } from './shirt/shirt.component';
-import { AddShirtComponent } from './add-shirt/add-shirt.component';
-import { EditShirtComponent } from './edit-shirt/edit-shirt.component';
+import { BooksComponent } from './books/books.component';
+import { AddBooksComponent } from './add-books/add-books.component';
+import { EditBooksComponent } from './edit-books/edit-books.component';
 
 const routes: Routes = [
   { path: 'store', component: StoreComponent },
-  { path: 'shirt/:id', component: ShirtComponent },
+  { path: 'books/:id', component: BooksComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'admin/add', component: AddShirtComponent },
-  { path: 'admin/edit/:id', component: EditShirtComponent}
+  { path: 'admin/add', component: AddBooksComponent },
+  { path: 'admin/edit/:id', component: EditBooksComponent}
 ];
 
 @NgModule({

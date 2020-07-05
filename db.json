@@ -1,24 +1,24 @@
 {
-  "shirts": [
+  "books": [
     {
-      "model": "Slim Formal",
-      "type": "Cotton",
-      "price": "89",
-      "imgUrl": "https://www.cottonking.com/1635-thickbox_default/buy-slim-formal-cotton-shirt-online-office-wear-slim-formal-cotton-shirt-online-s26905.jpg",
+      "Name": "Short answers to big questions",
+      "Author": "Stephen hawking",
+      "Year of issue": "2018",
+      "imgUrl": "https://www.mindfulofscience.org/wp-content/uploads/2018/10/IMG_6193-1-1200x1600.jpg",
       "id": 3
     },
-    {
-      "model": "BlackStone",
-      "type": "Sport T-Shirt",
-      "price": "31",
-      "imgUrl": "https://cdn.designbyhumans.com/product_images/p/599418.65.fd0c7S7YyNAAA-650x650-b-p-eee.jpg",
+    { 
+      "Name": "Steve Jobs",
+      "Author": "Isaacson Walter",
+      "Year of issue": "2015",
+      "imgUrl": "https://www.eskikitap.net/image/cache/data/An%C4%B1-Biyografi/Steve%20jobs-650x650.JPG",
       "id": 4
     },
     {
-      "model": "Hi Visibility",
-      "type": "Safety Orange",
-      "price": "27",
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/61mSyjeYXWL._AC_UX679_.jpg",
+      "Name": "V - means Vendetta",
+      "Author": "Moore Alan",
+      "Year of issue": "2020",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/V_for_vendettax.jpg/220px-V_for_vendettax.jpg",
       "id": 5
     }
   ]

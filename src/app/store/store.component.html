@@ -1,14 +1,14 @@
 <app-spinner *ngIf="loading"></app-spinner>
 
 <div class="page-cont">
-    <a *ngFor="let shirt of shirts" class="shirt-row" [routerLink]="['/shirt', shirt.id]">
-        <div class="shirt-img">
-            <img src="{{ shirt.imgUrl }}" alt="">
+    <a *ngFor="let books of bookss" class="books-row" [routerLink]="['/books', books.id]">
+        <div class="books-img">
+            <img src="{{ books.imgUrl }}" alt="">
         </div>
-        <div class="shirt-desc">
-            <h3 class="shirt-model">{{ shirt.model }}</h3>
-            <p class="shirt-type">{{ shirt.type }}</p>
+        <div class="books-desc">
+            <h3 class="books-model">{{ books.Name }}</h3>
+            <p class="books-type">{{ books.Author }}</p>
         </div>
-        <div class="price">{{ shirt.price }} $</div>
+        <div class="price">{{ books.Year of issue}} $</div>
     </a>
 </div>
